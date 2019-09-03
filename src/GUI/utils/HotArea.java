@@ -1,7 +1,5 @@
 package GUI.utils;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.awt.*;
 
 public class HotArea extends Rectangle {
@@ -9,7 +7,7 @@ public class HotArea extends Rectangle {
 		super(x, y, width, height);
 	}
 
-	public HotArea(@NotNull Point p, @NotNull Dimension d) {
+	public HotArea(Point p, Dimension d) {
 		super(p, d);
 	}
 
@@ -33,14 +31,13 @@ public class HotArea extends Rectangle {
 		return super.getHeight();
 	}
 
-	@NotNull
 	@Override
 	public Point getLocation() {
 		return super.getLocation();
 	}
 
 	@Override
-	public void setLocation(@NotNull Point p) {
+	public void setLocation(Point p) {
 		super.setLocation(p);
 	}
 
@@ -49,14 +46,13 @@ public class HotArea extends Rectangle {
 		super.setLocation(x, y);
 	}
 
-	@NotNull
 	@Override
 	public Dimension getSize() {
 		return super.getSize();
 	}
 
 	@Override
-	public void setSize(@NotNull Dimension d) {
+	public void setSize(Dimension d) {
 		super.setSize(d);
 	}
 
