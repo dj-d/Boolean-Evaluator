@@ -308,8 +308,8 @@ public class InterfacePanel extends JPanel {
 		// TODO: Inserire il valore delle lettere nei pulsanti
 		g.setColor(SHOW_STRING_COLOR);
 		g.setFont(SHOW_STRING_FONT);
-		g.drawString("A: " + selectionPanel.isA(), 200, 250);
-		g.drawString("B: " + selectionPanel.isB(), 400, 250);
+		g.drawString("A: " + selectionPanel.isA(), 100, 250);
+		g.drawString("B: " + selectionPanel.isB(), 300, 250);
 	}
 
 	/**
