@@ -6,14 +6,14 @@ import javax.swing.*;
 import java.awt.*;
 
 public class InterfaceFrame extends JFrame {
-	public static final int HEIGHT_WINDOW = 720;
 	public static final int WIDTH_WINDOW = 1280;
+	public static final int HEIGHT_WINDOW = 720;
 	public static final Dimension DIMENSION = new Dimension(WIDTH_WINDOW, HEIGHT_WINDOW);
 	public static final boolean RESIZABLE = false;
 
 	public static final int WELCOME_PANEL = 1;
 	public static final int SELECTION_PANEL = 2;
-	public static final int INTERFACE_PANEL = 32;
+	public static final int INTERFACE_PANEL = 3;
 
 	private static final String PROGRAM_NAME = "Boolean Evaluator";
 
@@ -39,7 +39,6 @@ public class InterfaceFrame extends JFrame {
 
 		InterfaceFrame.interfacePanel = new InterfacePanel(selectionPanel);
 		this.getContentPane().add(interfacePanel);
-
 
 		InterfaceFrame.welcomePanel.setFocusable(true);
 		InterfaceFrame.selectionPanel.setFocusable(true);
