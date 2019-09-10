@@ -72,6 +72,14 @@ public class InterfacePanel extends JPanel {
 
 		this.selectionPanel = pSelectionPanel;
 
+//		initString();
+//		buttonCreator();
+//		setBtnPosition();
+//		addMouseListenerToButton();
+//		addButtonToPanel();
+	}
+
+	public void init() {
 		initString();
 		buttonCreator();
 		setBtnPosition();
@@ -96,10 +104,10 @@ public class InterfacePanel extends JPanel {
 	 * Creazione di tutti i pulsanti
 	 */
 	private void buttonCreator() {
-		this.a = new JButton("A");
+		this.a = new JButton("A: " + String.valueOf(selectionPanel.isA()));
 		this.a.setBounds(0, 0, 100, 50);
 
-		this.b = new JButton("B");
+		this.b = new JButton("B: " + String.valueOf(selectionPanel.isB()));
 		this.b.setBounds(0, 0, 100, 50);
 
 		this.openParenthesis = new JButton("(");
@@ -305,11 +313,11 @@ public class InterfacePanel extends JPanel {
 			g.drawString(result, resultPosition.x, resultPosition.y);
 		}
 
-		// TODO: Inserire il valore delle lettere nei pulsanti
-		g.setColor(SHOW_STRING_COLOR);
-		g.setFont(SHOW_STRING_FONT);
-		g.drawString("A: " + selectionPanel.isA(), 100, 250);
-		g.drawString("B: " + selectionPanel.isB(), 300, 250);
+//		// TODO: Inserire il valore delle lettere nei pulsanti
+//		g.setColor(SHOW_STRING_COLOR);
+//		g.setFont(SHOW_STRING_FONT);
+//		g.drawString("A: " + selectionPanel.isA(), 100, 250);
+//		g.drawString("B: " + selectionPanel.isB(), 300, 250);
 	}
 
 	/**

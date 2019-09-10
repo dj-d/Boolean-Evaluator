@@ -70,6 +70,8 @@ public class InterfaceFrame extends JFrame {
 				InterfaceFrame.selectionPanel.setVisible(false);
 				InterfaceFrame.interfacePanel.setVisible(true);
 
+				InterfaceFrame.interfacePanel.init();
+
 				InterfaceFrame.interfacePanel.requestFocusInWindow();
 				break;
 		}
