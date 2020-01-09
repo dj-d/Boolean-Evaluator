@@ -1,6 +1,5 @@
 package logic;
 
-public interface BooleanExpression
-	{
-		boolean interpret();
-	}
+public interface BooleanExpression {
+	boolean interpret();
+}
